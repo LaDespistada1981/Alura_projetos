@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Autenticador_login_senha</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var loginCadastrado = "alura";
+        var senhaCadastrada = "alura123";
+
+        var maxTentativas = 3;
+        var tentativaAtual = 1;
+
+        while(tentativaAtual <= maxTentativas) {
+             
+             var loginInformado = prompt("Informe seu login.");
+             var senhaInfomada = prompt("Informe sua senha");
+
+             if(loginCadastrado == loginInformado && senhaCadastrada == senhaInfomada) {
+
+                 alert("Bem-vindo ao sistema, " + loginInformado + " !");
+                 tentativaAtual = maxTentativas;
+
+             } else {
+
+                 if(tentativaAtual == 3) {
+
+                     alert("Número permitido de tentativas ultrapassado!");
+
+                 } else {
+
+                    alert("Login inválido. Tente novamente.");
+                 }
+             }
+             tentativaAtual = tentativaAtual + 1;
+        }
+
+    </script>
+</body>
+</html>

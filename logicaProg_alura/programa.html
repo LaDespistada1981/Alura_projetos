@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programação em JavaScript</title>
+</head>
+<body>
+    
+    <script>
+
+        function pulaLinha() {
+
+            document.write("<br> <br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        //Criando função mostra() para substituir document.write()
+
+        var ano = 2020;
+
+        //document.write("Flavio tem: " + (ano - 1977) +  "anos.");
+        mostra("Flavio tem: " + (ano - 1977) +  " anos.");
+
+
+        //document.write("Ana tem: " + (ano - 1996) + "anos.");
+        mostra("Ana tem: " + (ano - 1996) + " anos.");
+
+
+        ano = 2016
+
+        //document.write("Barney tem: " + (ano - 1981) + " anos.");
+        mostra("Barney tem: " + (ano - 1981) + " anos.");
+
+
+        var idadeFlavio = 44;
+        var idadeAna = 25;
+        var idadeBarney = 39;
+
+        var media = (idadeFlavio+idadeAna+idadeBarney)/3;
+
+        document.write("A média das idades é: " + Math.round(media) + " anos.");
+      
+        pulaLinha();
+
+        var nome = "Flavio";
+
+        document.write("A idade de"  + nome + " é: "  + idadeFlavio + " anos.");
+    </script>
+
+</body>
+</html>

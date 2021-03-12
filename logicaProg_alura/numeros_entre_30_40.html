@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Números entre 30 e 40</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var inicio = 30;
+
+        limite = 40;
+
+        while(inicio <= limite) {
+            
+            if(inicio == 33) {
+                inicio = inicio + 1;
+            }
+
+            if(inicio == 37) {
+                inicio = inicio + 1;
+            } else {
+
+                mostra(inicio);
+                inicio = inicio + 1;
+            }
+        }
+
+        mostra("FIM");
+
+    </script>
+</body>
+</html>

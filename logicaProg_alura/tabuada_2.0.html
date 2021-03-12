@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Tabuada 2</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        for(var multiplicador = 1; multiplicador <= 10; multiplicador++ ) {
+            
+             mostra( 16 * multiplicador);
+        }
+
+        
+      /*   Usando While para a mesma função
+      var multiplicador = 1;
+
+        while(multiplicador <= 10) {
+            mostra(7 * multiplicador);
+            multiplicador = multiplicador + 1;
+        } */
+
+        mostra("FIM");
+
+    </script> 
+
+</body>
+</html>

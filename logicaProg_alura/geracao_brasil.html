@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerações brasileiras desde 1500</title>
+</head>
+<body>
+    <h3>Quantidade de gerações de brasileiros desde a chegada dos portugueses em 1500.</h3>
+    <script>
+
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(resultado) {
+            document.write(resultado);
+            pulaLinha();
+        }
+
+        var anoAtual = 2020;
+        var anoDescobrimento = 1500;
+        var mediaAnos = 28;
+        var quantidadeGeracoes = (Math.round((anoAtual - anoDescobrimento)/mediaAnos));
+        
+
+        mostra("O número de gerações desde a chegada dos portugueses no Brasil é: ");
+        mostra(quantidadeGeracoes);
+
+    </script>
+</body>
+</html>

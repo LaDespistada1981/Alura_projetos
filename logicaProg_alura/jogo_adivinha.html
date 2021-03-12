@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Jogo de adivinhação.</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        function sorteia(n) {
+            return Math.round(Math.random() * n)
+        }
+
+        var numeroPensado = sorteia(10); 
+
+        //var numeroPensado = Math.round(Math.random() * 10); // >>>> variável alternativa para a função sorteia(n)
+
+        console.log(numeroPensado);   //>>> exibe o número pensado aleatório no console
+
+        var tentativas = 1;
+        while(tentativas <= 3) {
+            var chute = parseInt(prompt("Adivinha o número que eu pensei???"));
+
+            if(chute == numeroPensado) {
+            
+                mostra("Uau! Você ACERTOU!!! Eu pensei no número " + numeroPensado);
+
+                break;
+
+            } else {
+
+                mostra("Você ERROU! Tente novamente!");
+
+            }
+            tentativas++;
+        }
+
+        mostra("FIM!");
+
+    </script>
+</body>
+</html>

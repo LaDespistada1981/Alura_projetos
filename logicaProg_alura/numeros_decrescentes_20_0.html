@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Números decrescentes de 20 a 0</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var inicio = 20;
+
+        limite = 0;
+
+        while(inicio >= limite) {
+
+                mostra(inicio);
+                inicio = inicio - 1;
+        }
+
+        mostra("FIM");
+
+    </script>
+</body>
+</html>
